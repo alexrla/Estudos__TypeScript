@@ -15,6 +15,12 @@
 
 
 
+### Instalação
+
+- **`npm install -g typescript`;**
+
+
+
 ### Compilador TypeScript (TSC - TypeScript Compiler)
 
 - **Os navegadores só conseguem ler código JavaScript;**
@@ -36,17 +42,29 @@
 
 - **No arquivo tsconfig.json, podemos especificar o diretório contendo nossos arquivos .ts, através do _"rootDir"_ e também podemos especificar para onde vão os códigos convertidos, os arquivos .js, através do _"outDir"_;**
 
-- **
+
+
+### Tipos de dados
+
+- **Um dos princípios do TypeScript, é a definição dos tipos que as variáveis irão possuir (isso nos dá mais controle sobre essas informações);**
+- **O JavaScript é uma linguagem de tipagem dinâmica (podemos atribuir diferentes valores a uma variável, por exemplo, ela pode ser inicializada com um número, mas em seguida podemo trocar esse valor para um texto, string e com isso, através do valor atribuído a variável, ocorre a inferência de tipo). Já com o TypeScript, definimos um tipo (coisa não acontece com JavaScript) e essa variável será desse tipo (não poderemos alterar);**
+- **Dedução de tipo -Type Inference;**
+- **No TypeScript, o tipo da variável é definido através do valor pelo qual a inicializamos. Por exemplo, se declaramos uma variável e a iniializamos com um texto, ela será do tipo string, "até o final" (não poderemos atribuir, por exemplo, um número a ela - algo que poderia ser feito em JavaScript);**
+- **No TypeScript, não precisamos definir, explicitamente, o tipo da variável;**
 
 
 
 ### OBS.
 
-- **Acusa erro, quando dois arquivos estão abertos (um .ts e outro .js) e ambos os arquivos possuem declarações com o mesmo nome (fechando o arquivo .js, deixa de acusar o erro);**
+- **Acusa erro, quando dois arquivos estão abertos (um .ts e outro .js, no mesmo diretório) e ambos os arquivos possuem declarações com o mesmo nome (fechando o arquivo .js, deixa de acusar o erro);**
 - **Podemo definir como a compilação ocorre, mas o padrão do TypeScript é converter o código para o JavaScript na versão 3 (ECMAScript 3);**
 - **O TypeScript oferece uma ferramenta, um arquivo de configuração, onde não se faz necessário executar o nosso código, passando flags (nome do arquivo: tsconfig.json);**
 - **Quando definimos o arquivo tsconfig.json, não é mais necessário usar o comando tsc nome_do_arquivo.ts, para converter o código TypesScript em JavaScrit, basta apenar usar o comando tsc no terminal (ele vai encontrar todos os arquivos .ts, além do arquivo tsconfig.json e converter todos os arquivos .ts, em .js);**
-- 
+- **tsc --watch: compila automaticamente os arquivos .ts (para sair: CTRL + C);**
+
+
+
+
 
 
 

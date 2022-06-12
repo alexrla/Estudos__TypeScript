@@ -1,0 +1,24 @@
+"use strict";
+let administrator = true;
+console.log(administrator);
+administrator = false;
+console.log(administrator);
+administrator = (2 > 1);
+console.log(administrator);
+administrator = Boolean("1");
+console.log(administrator);
+administrator = Boolean("0");
+console.log(administrator);
+administrator = Boolean("[]");
+console.log(administrator);
+administrator = Boolean("");
+console.log(administrator);
+administrator = Boolean(0);
+console.log(administrator);
+administrator = Boolean([]);
+console.log(administrator);
+administrator = Boolean(null);
+console.log(administrator);
+administrator = Boolean(undefined);
+console.log(administrator);
+//# sourceMappingURL=boolean.js.map
