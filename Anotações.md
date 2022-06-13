@@ -54,6 +54,14 @@
 
 
 
+### Funções
+
+- **Com o TypeScript, podemos definir a tipagem dos parâmetros e a tipagem do retorno, das funções;**
+- **Além disso, podemos acessar recursos avançados das funções, como Arrow Functions e Rest Parameters;**
+- **Para dizer que um parâmetro é opcional, colocamos o símbolo de interrogação `?`, após o nome do parâmetro (e antes dos dois-pontos);**
+
+
+
 ### OBS.
 
 - **Acusa erro, quando dois arquivos estão abertos (um .ts e outro .js, no mesmo diretório) e ambos os arquivos possuem declarações com o mesmo nome (fechando o arquivo .js, deixa de acusar o erro);**
