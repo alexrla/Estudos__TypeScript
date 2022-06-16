@@ -62,6 +62,14 @@
 
 
 
+### Interfaces
+
+- **Estruturas que nos permite definir a forma de objetos (regras que o objeto deve atender/seguir);**
+- **Através delas podemos definir os tipos de dados das propriedades, os parâmetros esperados pelas funções e os tipos dos retornos dessas funções;**
+- **Em relação as interfaces, precisamos seguir as regras definidas para que o código funcione (um padrão é criado e somos obrigados a seguir esse padrão);**
+
+
+
 ### OBS.
 
 - **Acusa erro, quando dois arquivos estão abertos (um .ts e outro .js, no mesmo diretório) e ambos os arquivos possuem declarações com o mesmo nome (fechando o arquivo .js, deixa de acusar o erro);**
@@ -69,6 +77,9 @@
 - **O TypeScript oferece uma ferramenta, um arquivo de configuração, onde não se faz necessário executar o nosso código, passando flags (nome do arquivo: tsconfig.json);**
 - **Quando definimos o arquivo tsconfig.json, não é mais necessário usar o comando tsc nome_do_arquivo.ts, para converter o código TypesScript em JavaScrit, basta apenar usar o comando tsc no terminal (ele vai encontrar todos os arquivos .ts, além do arquivo tsconfig.json e converter todos os arquivos .ts, em .js);**
 - **tsc --watch: compila automaticamente os arquivos .ts (para sair: CTRL + C);**
+- **Arquivos js.map (um arquivo JSON), ajudam o navegador a fazer a leitura e a apontar os erros diretamente no arquivo .ts e não no arquivo .js;**
+
+
 
 
 
