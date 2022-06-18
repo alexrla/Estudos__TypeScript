@@ -70,16 +70,74 @@
 
 
 
-### OBS.
+### POO - Programação Orientada a Objetos
+
+- **Paradigma de programação que consiste em criar instâncias de nossos projetos, levando em conta o conceito dos objetos, no mundo real;**
+- **Os objetos possuem características e ações em comum;**
+- **Para construir um objeto, é necessário possuir um modelo, que nos ajudará a entender como o objeto será e o que ele fará;**
+- **Para criar um objeto (na programação), precisamos , antes,criar uma classe;**
+- **Uma classe define as características e as ações que o nosso objeto possuirá (ela é o nosso modelo);**
+- **Na programação, as características são chamadas de atributos e ações são chamadas de métodos;**
+- **Um objeto consiste em uma nova representação da classe, uma instância;**
+- **Além disso, criar instâncias, a Orientação a objetos funciona com quatro conceitos principais:**
+  - **Herança: quando uma classe herda algo (atributos ou métodos) de outra classe;**
+  - **Encapsulamento: tipo de proteção, tanto para os atributos, como para os métodos;**
+  - **Polimorfismo: ;**
+  - **Abstração;**
+
+
+
+### Herança
+
+- **O conceito de herança permite que uma classe herde recursos de outra classe;**
+- **A classe que compartilha as informações, é chamada de classe pai;**
+- **A classe que herda informações, é chamada de classe filha (ela vai possuir os atributos e métodos da classe pai);**
+- **Quando estamos em um construtor e chamamos o `super()`, automaticamente, o construtor da classe pai é chamado;**
+- **O super deve ser a primeira coisa a ser chamada, dentro do construtor da classe filha;**
+
+
+
+### Encapsulamento
+
+- **Nos permite definir nǘeis de acesso, para os nossos atributos e métodos;**
+
+- **Usando os modificadores de acesso, podemos determinar até que ponto um atributo/métodos, é visível para outras variáveis ou classes;**
+
+- **Existem quatro modificadores de acesso, que podemos atribuir aos nossos atributos, e três que podemos atribuir aos métodos:**
+
+  **1 - public: qualquer classe tem acesso aos atributos e métodos (e podem alterar os mesmos);**
+
+  **2 - protected: somente a classe pai e as filhas, possuem acesso e podem altera, os atributos e métodos;**
+
+  **3 - private: somente a classe onde os atributos e métodos foram criados, terá acesso aos mesmos (e poderá modificá-los);**
+
+  **4 - readonly (apenas para atributos): podemos apenas fazer a leitura do atributo, mas não podemos alterá-lo (os atributos são vistos e lidos,  mas não podem ser alterados);**
+
+
+
+### Polimorfismo
+
+- **Definição: qualidade ou estado, de ser capaz de assumir diferentes formas;**
+- **Conceito aplicado quando um classe filha, cria um mesmo atributo ou método, de sua classe pai, mas implementando um novo comportamente ou lógica (sobrescrevendo);**
+
+
+
+### Abstração
+
+- **Abstração é um conceito que nos permite criar classes abstratas, que representam atributos e métodos que podem ser utilizados em mais de um contexto;**
+- **Essa prática nos ajuda a reaproveitar melhor o código e também a deixá-lo mais leve;**
+- **Classes abstratas não podem ser instanciadas;**
+
+
+
+### OBS.:
 
 - **Acusa erro, quando dois arquivos estão abertos (um .ts e outro .js, no mesmo diretório) e ambos os arquivos possuem declarações com o mesmo nome (fechando o arquivo .js, deixa de acusar o erro);**
-- **Podemo definir como a compilação ocorre, mas o padrão do TypeScript é converter o código para o JavaScript na versão 3 (ECMAScript 3);**
+- **Podemos definir como a compilação ocorre, mas o padrão do TypeScript é converter o código para o JavaScript na versão 3 (ECMAScript 3);**
 - **O TypeScript oferece uma ferramenta, um arquivo de configuração, onde não se faz necessário executar o nosso código, passando flags (nome do arquivo: tsconfig.json);**
 - **Quando definimos o arquivo tsconfig.json, não é mais necessário usar o comando tsc nome_do_arquivo.ts, para converter o código TypesScript em JavaScrit, basta apenar usar o comando tsc no terminal (ele vai encontrar todos os arquivos .ts, além do arquivo tsconfig.json e converter todos os arquivos .ts, em .js);**
 - **tsc --watch: compila automaticamente os arquivos .ts (para sair: CTRL + C);**
 - **Arquivos js.map (um arquivo JSON), ajudam o navegador a fazer a leitura e a apontar os erros diretamente no arquivo .ts e não no arquivo .js;**
-
-
 
 
 

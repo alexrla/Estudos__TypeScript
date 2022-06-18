@@ -6,86 +6,86 @@ let address: object;
 
 // Eu posso ter qualquer propriedade (nome) e valor, que nenhum erro é acusado
 address = {
-    rua: "Rua dos Bobos",
-    numero: 0
+    street: "Rua dos Bobos",
+    number: 0
 };
 
 address = {
-    logradouro: "Rua dos Bobos",
+    str: "Rua dos Bobos",
     num: 0
 };
 
 // Criando regras
 let newAddress: {
-    rua: string,
-    numero: number,
-    bairro: string,
-    cidade: string
+    street: string,
+    number: number,
+    district: string,
+    city: string
 };
 
 newAddress = {
-    rua: "Rua dos Bobos",
-    numero: 0,
-    bairro: "Centro",
-    cidade: "São Paulo"
+    street: "Rua dos Bobos",
+    number: 0,
+    district: "Centro",
+    city: "São Paulo"
 };
 
 // Criando uma interface
 
 // Padrão PascalCase e Letra I no inicio
 interface IAddress {
-    rua: string;
-    numero: number;
-    bairro: string;
-    cidade: string;
+    street: string,
+    number: number,
+    district: string,
+    city: string
 };
 
 // Definindo uma tipagem de dados
 let myNewAddress: IAddress; // Convenção: colocar a letra I na frente do nome da interface
 
 myNewAddress = {
-    rua: "Rua dos Bobos",
-    numero: 0,
-    bairro: "Centro",
-    cidade: "São Paulo"
+    street: "Rua dos Bobos",
+    number: 0,
+    district: "Centro",
+    city: "São Paulo"
 };
 
 // Propriedades opcionais (utilizamos o sinal de interrogação, assim como fazemos com parâmetros de funções, que são opcionais)
 interface IProduct  {
-    nome: string,
-    preco: number,
-    descricao?: string,
-    dataValidade?: Date
+    name: string,
+    price: number,
+    description?: string,
+    expirationDate?: Date
 }
 
 const iogurte: IProduct = {
-    nome: "Iogurte",
-    preco: 12,
-    descricao: "Iogurte Natural",
-    dataValidade: new Date(2022, 3, 22)
+    name: "Iogurte",
+    price: 12,
+    description: "Iogurte Natural",
+    expirationDate: new Date(2022, 3, 22)
 };
 
 const notebook: IProduct = {
-    nome: "Notebook",
-    preco: 5000
+    name: "Notebook",
+    price: 5000
 };
 
 console.log(iogurte)
 
-// Propriedades readonly (se quisermos que o valor de uma propriedade não seja alterado)
+// Propriedade readonly (se quisermos que o valor de uma propriedade não seja alterado)
 interface ICurso    {
-    readonly titulo: string,
-    descricao?: string,
-    preco: number,
-    cargaHoraria: number,
-    classificacao: number
+    readonly title: string,
+    description?: string,
+    price: number,
+    loadHorary: number,
+    classification: number
 };
 
 const cursoNode: ICurso = {
-    titulo: "NodeJS",
-    preco: 3000,
-    cargaHoraria: 39,
-    classificacao: 5
+    title: "NodeJS",
+    price: 3000,
+    loadHorary: 39,
+    classification: 5
 };
 
 // Erro: cursoNode.titulo = "Node";
@@ -117,7 +117,7 @@ interface ICalculations {
     division(numOne: number, numTwo: number): number
 };
 
-let calculadora: ICalculations;
+let calculator: ICalculations;
 
 function multiply(multiplying: number, multiplier: number): number  {
     return multiplying * multiplier;
@@ -126,7 +126,7 @@ function multiply(multiplying: number, multiplier: number): number  {
 
 const division = (dividend: number, divider: number): number => dividend / divider;
 
-calculadora = {
+calculator = {
     sum: (valueOne: number, valueTwo: number): number => {
         return valueOne + valueTwo;
     },
@@ -137,31 +137,31 @@ calculadora = {
     division
 };
 
-console.log(calculadora.sum(2, 3));
+console.log(calculator.sum(2, 3));
 
 // Arrays em interfaces
 interface ICategories   {
-    nome: string,
+    name: string,
     id: number,
-    categoriaPai?: ICategories 
+    parentCategory?: ICategories 
 };
 
 const frontEnd: ICategories = {
-    nome: "Front-end",
+    name: "Front-end",
     id: 1
 };
 
 const backEnd: ICategories = {
-    nome: "Back-end",
+    name: "Back-end",
     id: 1
 };
 
 interface IMenu {
-    categorias: ICategories[]
+    categories: ICategories[]
 }
 
 let menu: IMenu = {
-    categorias: [frontEnd, backEnd]
+    categories: [frontEnd, backEnd]
 };
 
 console.log(menu);
@@ -182,17 +182,17 @@ interface Model     {
 }
 
 interface IPerson extends Model   {
-    nome: string,
+    name: string,
 }
 
 interface IUser extends IPerson {
     email: string,
-    senha: string,
+    password: string,
 }
 
 const joao: IUser = {
     id: 1,
-    nome: "Joao",
+    name: "Joao",
     email: "joao@email.com",
-    senha: "abc123"
+    password: "abc123"
 }
