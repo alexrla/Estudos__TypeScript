@@ -130,6 +130,18 @@
 
 
 
+### Módulos
+
+- **Um módulo é basicamente um arquivo separado, que armazena uma parte do nosso código;**
+- **Ao fazer a importação de um módulo, podemos reaproveitar seu código em vários arquivos;**
+- **Ao utilizar módulos, temos acesso aos seguintes benefícios:**
+  - **Melhor organização do código;**
+  - **Melhor reutilização do código;**
+  - **Evitar conflito nos identificadores das variáveis (cada módulo tem seu próprio escopo);**
+- **Módulos são necessários pois conforme o projeto cresce, o número de arquivos também aumenta, o que pode deixar o nosso projeto desorganizado e confuso;**
+
+
+
 ### OBS.:
 
 - **Acusa erro, quando dois arquivos estão abertos (um .ts e outro .js, no mesmo diretório) e ambos os arquivos possuem declarações com o mesmo nome (fechando o arquivo .js, deixa de acusar o erro);**
