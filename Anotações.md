@@ -142,6 +142,14 @@
 
 
 
+### Namespaces
+
+- **Recurso específico do TypeScript;**
+- **Permite a melhora da organização dos arquivos, em nossos projetos;**
+- **O objetivo dos namespaces, é muito similar ao objetivo dos módulos. Porém, os módulos são parte nativa da linguagem JavaScript. Logo, é recomendado usar módulos, ao invés de namespaces;**
+
+
+
 ### OBS.:
 
 - **Acusa erro, quando dois arquivos estão abertos (um .ts e outro .js, no mesmo diretório) e ambos os arquivos possuem declarações com o mesmo nome (fechando o arquivo .js, deixa de acusar o erro);**
