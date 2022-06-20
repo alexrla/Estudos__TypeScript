@@ -146,7 +146,19 @@
 
 - **Recurso específico do TypeScript;**
 - **Permite a melhora da organização dos arquivos, em nossos projetos;**
-- **O objetivo dos namespaces, é muito similar ao objetivo dos módulos. Porém, os módulos são parte nativa da linguagem JavaScript. Logo, é recomendado usar módulos, ao invés de namespaces;**
+- **O objetivo dos namespaces, é muito similar ao objetivo dos módulos. Porém, os módulos são parte nativa da linguagem JavaScript (isso, a partir do ECMAScript). Logo, é recomendado usar módulos, ao invés de namespaces;**
+
+
+
+### Generics
+
+- **Nos permitem a criação de estruturas, que serão adaptáveis a vários tipos de dados;**
+- **Esse conceito nos ajuda a reaproveitar melhor o nosso cósigo e a torná-lo flexível, para diversas situações;**
+- **Para definir um Generic, basta informar um tipo genérico, usando os sinais de menor e maior que ( < > );**
+- **Podemos criar tipos genéricos ao trabalhar como:**
+  - **Funções;**
+  - **Interfaces;**
+  - **Classes;**
 
 
 
